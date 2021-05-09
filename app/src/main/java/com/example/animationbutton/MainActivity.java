@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Zoom out Animation
         ZoomOut.setOnClickListener(new View.OnClickListener()
         {
             @Override
