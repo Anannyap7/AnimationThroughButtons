@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Rotate
         Rotate.setOnClickListener(new View.OnClickListener()
         {
             @Override
