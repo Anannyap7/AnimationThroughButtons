@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="206dp"
+    tools:layout_editor_absoluteY="51dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/fadeIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="FADE IN"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/fadeOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:text="FADE OUT"
+            app:layout_constraintEnd_toStartOf="@id/textFadeOut"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fadeIn" />
+
+        <Button
+            android:id="@+id/blink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="BLINK"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/fadeOut" />
+
+        <Button
+            android:id="@+id/zoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ZOOM IN"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/blink" />
+
+        <Button
+            android:id="@+id/zoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ZOOM OUT"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/zoomIn" />
+
+        <TextView
+            android:id="@+id/textFadeIn"
+            android:layout_width="74dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="75dp"
+            android:text="FADE IN"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textFadeOut"
+            android:layout_width="93dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
+            android:text="FADE OUT"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFadeIn" />
+
+        <TextView
+            android:id="@+id/textBlink"
+            android:layout_width="62dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="55dp"
+            android:text="BLINK"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textFadeOut" />
+
+        <TextView
+            android:id="@+id/textZoomIn"
+            android:layout_width="81dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="55dp"
+            android:text="ZOOM IN"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textBlink" />
+
+        <TextView
+            android:id="@+id/textZoomOut"
+            android:layout_width="112dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="55dp"
+            android:text="ZOOM OUT"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textZoomIn" />
+
+        <TextView
+            android:id="@+id/textRotate"
+            android:layout_width="112dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="55dp"
+            android:text="ROTATE"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textZoomOut" />
+
+        <TextView
+            android:id="@+id/textMove"
+            android:layout_width="112dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="55dp"
+            android:text="MOVE"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textRotate" />
+
+        <TextView
+            android:id="@+id/textSlideUp"
+            android:layout_width="112dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="55dp"
+            android:text="SLIDE UP"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textMove" />
+
+        <TextView
+            android:id="@+id/textSlideDown"
+            android:layout_width="112dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="50dp"
+            android:text="SLIDE DOWN"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textSlideUp" />
+
+        <TextView
+            android:id="@+id/textBounce"
+            android:layout_width="112dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="50dp"
+            android:text="BOUNCE"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textSlideDown" />
+
+        <TextView
+            android:id="@+id/textSeq"
+            android:layout_width="127dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="50dp"
+            android:text="SEQUENTIAL"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textBounce" />
+
+        <TextView
+            android:id="@+id/textTog"
+            android:layout_width="127dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="50dp"
+            android:text="TOGETHER"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/barrier2"
+            app:layout_constraintTop_toBottomOf="@id/textSeq" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left"
+            app:constraint_referenced_ids="textFadeOut"
+            tools:layout_editor_absoluteX="266dp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left"
+            app:constraint_referenced_ids="fadeOut"
+            tools:layout_editor_absoluteX="58dp" />
+
+        <Button
+            android:id="@+id/rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ROTATE"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/zoomOut" />
+
+        <Button
+            android:id="@+id/move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="MOVE"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/rotate" />
+
+        <Button
+            android:id="@+id/slideUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="SLIDE UP"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/move" />
+
+        <Button
+            android:id="@+id/slideDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="SLIDE DOWN"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/slideUp" />
+
+        <Button
+            android:id="@+id/bounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="BOUNCE"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/slideDown" />
+
+        <Button
+            android:id="@+id/seq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="SEQUENTIAL"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/bounce" />
+
+        <Button
+            android:id="@+id/tog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="TOGETHER"
+            app:layout_constraintStart_toStartOf="@id/barrier3"
+            app:layout_constraintTop_toBottomOf="@+id/seq" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

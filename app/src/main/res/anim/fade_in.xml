@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+    <alpha
+        android:duration="3000"
+        android:fromAlpha="0.0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:toAlpha="1.0" />
+
+<!--   transforms from an alpha of 0 (invisible) to an alpha of 1 (completely opaque)-->
+<!--    This first coverts the text view invisible, and then start the animation by making the text view completely visible in the set duration-->
+
+<!--    android:fillAfter : property specifies whether the view should be visible or hidden at the end of the animation.-->
+<!--    We’ve set it visible in the above code. If it sets to false, the element changes to its previous state or original state after the animation-->
+
+<!--    android:duration : Duration of the animation in which the animation should complete.-->
+
+    <!--    android:interpolator : It is the rate of change in animation. We can define our own interpolator using the time as the constraint. -->
+    <!--    In the above xml code an inbuilt interpolator is assigned-->
+<!--    This allows the basic animation effects (alpha, scale, translate, rotate) to be accelerated, decelerated, repeated, etc.-->
+<!--    DecelerateInterpolator: An interpolator where the rate of change starts out quickly and and then decelerates. -->
+
+
+</set>

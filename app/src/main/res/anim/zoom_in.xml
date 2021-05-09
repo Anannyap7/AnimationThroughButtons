@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+<!--android:duration	Used to define the duration of the animation in millisecond
+android:fromXScale	Used to set initial size of the view in X-axis
+android:fromYScale	Used to set initial size of the view in Y-axis
+android:pivotX	To define the X coordinate of the point about which the object is being zoom in/out
+android:pivotY	To define the Y coordinate of the point about which the object is being zoom in/out
+android:toXScale	Used to set final size of the view in X-axis
+android:toYScale	Used to set final size of the view in Y-axis-->
+
+    <!--  Using 50% will zoom in from the center of the original state, if it were 100%, it would zoom in from the left side only-->
+
+    <scale
+        android:duration="1000"
+        android:fromXScale="1"
+        android:fromYScale="1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="2"
+        android:toYScale="2" />
+
+</set>

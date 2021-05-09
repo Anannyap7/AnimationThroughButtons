@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+    <translate
+        android:interpolator="@android:anim/linear_interpolator"
+        android:fromXDelta="0%p"
+        android:toXDelta="75%p"
+        android:duration="800" />
+
+<!--    LinearInterpolator: An interpolator where the rate of change is constant -->
+<!--    fromXDelta: It is the change in X coordinate to be applied at the start of the animation-->
+<!--    toXDelta: It is the change in X coordinate to be applied at the end of the animation-->
+<!--    Move from 0 position to 75% position-->
+
+</set>
